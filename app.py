@@ -69,3 +69,6 @@ def remove_book(book_id: str):
     collection.delete_one({"_id": bson.ObjectId(book_id)})
 
     return f"DELETE: Your book (id = {book_id}) has been removed from your bookshelf.\n"
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', debug=True)
