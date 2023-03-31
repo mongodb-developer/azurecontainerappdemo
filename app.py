@@ -71,4 +71,4 @@ def remove_book(book_id: str):
     return f"DELETE: Your book (id = {book_id}) has been removed from your bookshelf.\n"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0', debug=True, port=5000)
