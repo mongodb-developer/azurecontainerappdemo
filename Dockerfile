@@ -9,7 +9,4 @@ COPY . /azurecontainerappsdemo/
 
 ENV FLASK_APP=app.py
 EXPOSE 5000
-CMD ["flask", "run"]
-
-
-
+CMD ["flask", "run", "--host=0.0.0.0"]
